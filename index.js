@@ -5,6 +5,9 @@ const fs = require("fs");
 
 const port = 8000;
 
+// Serving static files like CSS and Images
+app.use(express.static(__dirname + "/public"));
+
 /**
  * On Visting the home route of the website, we server index.html file
  */

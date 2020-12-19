@@ -3,29 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.ico" />
-
-    <!-- Base styling of the website -->
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 40px auto;
-        background-color: #333;
-      }
-    </style>
+    <link rel="icon" href="./assets/favicon.ico" />
 
     <!-- Video Js CSS + Custom Theme-->
     <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
       rel="stylesheet"
+      type="text/css"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <title>LCO Video Streaming</title>
   </head>
   <body>
+    <div
+      class="hero-banner"
+      onclick="window.open('https://courses.learncodeonline.in/learn','new_window');"
+    >
+      <img
+        src="./assets/logo.png"
+        width="50px"
+        height="50px"
+        alt="Learn Code Online"
+      />
+      <h3 class="text-white">Learn Code Online</h3>
+    </div>
+
     <video
       class="video-js vjs-theme-forest"
       controls
